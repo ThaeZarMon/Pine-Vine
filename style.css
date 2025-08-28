@@ -1,0 +1,172 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: linear-gradient(
+    to bottom left,
+    rgb(145, 213, 240),
+    rgb(183, 206, 219),
+    white
+  );
+}
+
+/* header section// */
+header {
+  /* border: 2px solid black; */
+  text-align: center;
+  padding: 50px 0;
+  background-image: url(image/maldives-island.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 300px;
+}
+
+header h1 {
+  font-size: 3rem;
+  color: rgb(5, 107, 102);
+  text-align: right;
+  margin-top: 100px;
+  margin-bottom: 20px;
+  margin-right: 200px;
+}
+header p {
+  text-align: right;
+  margin-right: 100px;
+  color: rgb(5, 107, 102);
+  font-size: 2rem;
+}
+header form {
+  color: rgb(5, 107, 102);
+  position: fixed;
+  top: 15px;
+  right: 5px;
+  font-size: 20px;
+  padding: 5px;
+  /* background-color: aqua; */
+}
+.btn {
+  text-align: right;
+  background-color: skyblue;
+  padding: 5px;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  position: fixed;
+  bottom: 19px;
+  right: 10px;
+}
+.badge {
+  padding: 1px;
+  background-color: red;
+  border-radius: 50%;
+}
+
+/* nav section// */
+nav {
+  padding: 20px;
+  background-color: rgb(172, 230, 245);
+  text-align: center;
+  text-decoration: none;
+  position: sticky;
+  top: 0;
+}
+nav a {
+  text-decoration: none;
+  color: rgb(5, 107, 102);
+  font-size: 1.5rem;
+  padding: 10px;
+  margin-top: 5px;
+}
+/* menu section// */
+#our-menu,
+#about-us,
+#contact {
+  margin-left: 30px;
+  text-align: left;
+  margin-bottom: 30px;
+  margin-top: 30px;
+}
+
+#our-menu h2,
+#about-us h2,
+#contact h2 {
+  font-size: 2rem;
+  color: rgb(5, 107, 102);
+  margin-bottom: 20px;
+  margin-left: 50px;
+}
+.menu {
+  border: 2px solid black;
+  width: 180px;
+  height: 300px;
+  text-align: center;
+  display: inline-block;
+  background-color: white;
+  border-radius: 10px;
+  text-align: center;
+  padding: 5px;
+  margin-left: 50px;
+  text-align: center;
+}
+.m-img {
+  max-width: 100%;
+  border-radius: 5px;
+  line-height: 1.5rem;
+}
+.m-body {
+  background-color: white;
+  color: rgb(5, 107, 102);
+}
+.m-body ul {
+  line-height: 1.5rem;
+  margin-top: 10px;
+  list-style-type: none;
+  margin-bottom: 10px;
+}
+.price {
+  font-weight: bold;
+}
+
+#our-menu a {
+  text-decoration: none;
+  color: rgb(5, 107, 102);
+  padding: 6px;
+  background-color: skyblue;
+  border-radius: 5px;
+  margin-top: 20px;
+  border: 2px solid rgb(5, 107, 102);
+}
+
+/* about us section// */
+#about-us {
+  margin-left: 30px;
+}
+#about-us p,
+#contact p {
+  text-align: left;
+  margin-left: 50px;
+  color: rgb(5, 107, 102);
+  line-height: 2rem;
+  font-size: 1.2rem;
+}
+
+/* contact section// */
+form {
+  margin-left: 50px;
+  color: rgb(5, 107, 102);
+}
+/* footer section// */
+
+footer a {
+  padding: 10px;
+  background-color: skyblue;
+  border-radius: 50%;
+  position: fixed;
+  bottom: 50px;
+  right: 20px;
+  text-decoration: none;
+  color: rgb(5, 107, 102);
+}

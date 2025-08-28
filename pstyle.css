@@ -1,0 +1,97 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: linear-gradient(
+    to bottom,
+    rgb(145, 213, 240),
+    rgb(183, 206, 219),
+    white
+  );
+  background-repeat: no-repeat;
+}
+/* header section// */
+header form {
+  color: rgb(5, 107, 102);
+  position: fixed;
+  top: 15px;
+  right: 5px;
+  font-size: 20px;
+  padding: 5px;
+  /* background-color: aqua; */
+}
+
+/* nav section// */
+nav {
+  border: 1px solid rgb(5, 107, 102);
+  border-radius: 5px;
+  height: 20px;
+  width: 50px;
+  background-color: rgb(172, 230, 245);
+  text-align: center;
+  text-decoration: none;
+  position: sticky;
+  top: 15px;
+  margin-left: 20px;
+}
+nav a {
+  text-decoration: none;
+  color: rgb(5, 107, 102);
+  font-size: 1rem;
+}
+/* Thai section// */
+#thailand,
+#maldives,
+#egypt {
+  margin-top: 50px;
+  margin-left: 50px;
+}
+#thailand h2,
+#maldives h2,
+#egypt h2 {
+  font-size: 2rem;
+  color: rgb(5, 107, 102);
+  margin-bottom: 20px;
+  margin-left: 50px;
+  text-align: left;
+}
+.place {
+  border: 2px solid black;
+  width: 250px;
+  height: 300px;
+  text-align: center;
+  display: inline-block;
+  background-color: white;
+  border-radius: 10px;
+  padding: 5px;
+  margin-left: 50px;
+}
+.p-img {
+  max-width: 100%;
+  border-radius: 5px;
+  line-height: 1.5rem;
+}
+.p-body {
+  background-color: white;
+  color: rgb(5, 107, 102);
+}
+.p-body ul {
+  line-height: 1.5rem;
+  margin-top: 10px;
+  list-style-type: none;
+  margin-bottom: 10px;
+  text-align: center;
+}
+/* footer section// */
+footer a {
+  padding: 10px;
+  background-color: skyblue;
+  border-radius: 50%;
+  position: fixed;
+  bottom: 50px;
+  right: 20px;
+  text-decoration: none;
+  color: rgb(5, 107, 102);
+}
