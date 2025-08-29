@@ -12,27 +12,37 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="pstyle.css" />
+    <script
+      src="https://kit.fontawesome.com/009f55d721.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
     <!-- header section// -->
     <header>
-      <!-- <h1>Pine & Vine</h1> -->
+      <!-- <form action="">
+        <div class="search">
+          <label for="">Search</label>
+          <input type="text" class="control" />
+        </div>
+      </form> -->
+    </header>
+
+    <!-- nav section// -->
+    <nav>
+      <a href="index.html">Pine & Vine<i class="fa-solid fa-house"></i></a>
+      <a href="places.html" class="country">Places</a>
+      <a href="#book" class="booking">Booking</a>
       <form action="">
         <div class="search">
           <label for="">Search</label>
           <input type="text" class="control" />
         </div>
       </form>
-    </header>
-
-    <!-- nav section// -->
-    <nav>
-      <a href="index.html">Home</a>
     </nav>
 
     <!-- thai section// -->
     <section id="thailand">
-      <h1>Pine & Vine</h1>
       <h2>Thailand</h2>
       <div class="place">
         <img src="image/bangkok.jpg" alt="" srcset="" class="p-img" />
@@ -148,7 +158,13 @@
       </div>
 
       <div class="place">
-        <img src="image/pyramid.jfif" alt="" srcset="" class="p-img" />
+        <img
+          src="image/valley.jfif"
+          alt=""
+          srcset=""
+          class="p-img"
+          class="c-img"
+        />
         <div class="p-body">
           <h3>Luxor</h3>
           <ul>
@@ -160,7 +176,13 @@
       </div>
 
       <div class="place">
-        <img src="image/aswan.jfif" alt="" srcset="" class="p-img" />
+        <img
+          src="image/temples.jfif"
+          alt=""
+          srcset=""
+          class="p-img"
+          class="c-img"
+        />
         <div class="p-body">
           <h3>Aswan</h3>
           <ul>
@@ -171,7 +193,13 @@
         </div>
       </div>
       <div class="place">
-        <img src="image/Alex.jfif" alt="" srcset="" class="p-img" />
+        <img
+          src="image/bay.jfif"
+          alt=""
+          srcset=""
+          class="p-img"
+          class="c-img"
+        />
         <div class="p-body">
           <h3>Alexandria</h3>
           <ul>
@@ -183,8 +211,8 @@
       </div>
     </section>
 
-    <!-- footer section// -->
-    <footer>
+    <!-- booking section// -->
+    <section id="book">
       <h2>Booking</h2>
       <form action="">
         <div>
@@ -216,11 +244,39 @@
           <label for=""> Family Package</label>
           <input type="radio" name="package" id="" />
         </div>
+        <br />
+
+        <div class="choice">
+          <label for=""> Thailand</label>
+          <input type="radio" name="place" id="" />
+        </div>
+
+        <div class="choice">
+          <label for=""> Maldives</label>
+          <input type="radio" name="place" id="" />
+        </div>
+
+        <div class="choice">
+          <label for=""> Egypt</label>
+          <input type="radio" name="place" id="" />
+        </div>
 
         <input type="submit" value="Book" class="btn" />
       </form>
+    </section>
 
-      <a href="">&uarr;</a>
+    <!-- footer section// -->
+    <footer>
+      <a href="#" class="to-top">&uarr;</a>
+      <div class="social">
+        <h3>Contact Us</h3>
+        <p>No.123, Pagoda Road <br />Yangon, Myanmar</p>
+      </div>
+      <a href="#" class="icon">Facebook</a> <i class="fa-brands fa-facebook"></i
+      ><br />
+      <a href="#" class="icon">Telegram</a><i class="fa-brands fa-telegram"></i
+      ><br />
+      <a href="#" class="icon">Whatsapp</a><i class="fa-brands fa-whatsapp"></i>
     </footer>
   </body>
 </html>
