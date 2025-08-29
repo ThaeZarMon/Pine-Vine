@@ -3,6 +3,10 @@
   padding: 0;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background: linear-gradient(
     to bottom left,
@@ -16,30 +20,33 @@ body {
 header {
   /* border: 2px solid black; */
   text-align: center;
-  padding: 50px 0;
+  padding: 15px 0;
   background-image: url(image/maldives-island.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  height: 300px;
+  height: 330px;
+  position: relative;
 }
 
 header h1 {
-  font-size: 3rem;
-  color: rgb(5, 107, 102);
-  text-align: right;
-  margin-top: 100px;
-  margin-bottom: 20px;
-  margin-right: 200px;
+  font-size: 2rem;
+  color: rgb(4, 65, 63);
+  text-align: left;
+  margin-top: 1px;
+  /* margin-bottom: 20px; */
+  margin-left: 50px;
+  text-shadow: 1px 1px 1px white;
 }
-header p {
+/* header p {
   text-align: right;
   margin-right: 100px;
   color: rgb(5, 107, 102);
   font-size: 2rem;
-}
-header form {
-  color: rgb(5, 107, 102);
+} */
+
+.search {
+  color: rgb(4, 65, 63);
   position: fixed;
   top: 15px;
   right: 5px;
@@ -58,11 +65,11 @@ header form {
   bottom: 19px;
   right: 10px;
 }
-.badge {
+/* .badge {
   padding: 1px;
   background-color: red;
   border-radius: 50%;
-}
+} */
 
 /* nav section// */
 nav {
@@ -76,25 +83,26 @@ nav {
 nav a {
   text-decoration: none;
   color: rgb(5, 107, 102);
-  font-size: 1.5rem;
-  padding: 10px;
+  font-size: 1.2rem;
+  padding: 20px;
   margin-top: 5px;
 }
+
 /* menu section// */
 #our-menu,
 #about-us,
-#contact {
+#profile {
   margin-left: 30px;
   text-align: left;
-  margin-bottom: 30px;
+  margin-bottom: 50px;
   margin-top: 30px;
 }
 
 #our-menu h2,
 #about-us h2,
-#contact h2 {
+#profile h2 {
   font-size: 2rem;
-  color: rgb(5, 107, 102);
+  color: rgb(4, 65, 63);
   margin-bottom: 20px;
   margin-left: 50px;
 }
@@ -119,6 +127,10 @@ nav a {
 .m-body {
   background-color: white;
   color: rgb(5, 107, 102);
+}
+.m-body h3 {
+  margin-top: 10px;
+  color: rgb(4, 65, 63);
 }
 .m-body ul {
   line-height: 1.5rem;
@@ -145,7 +157,7 @@ nav a {
   margin-left: 30px;
 }
 #about-us p,
-#contact p {
+#profile p {
   text-align: left;
   margin-left: 50px;
   color: rgb(5, 107, 102);
@@ -155,9 +167,36 @@ nav a {
 
 /* contact section// */
 form {
-  margin-left: 50px;
+  width: 90%;
+  margin: 20px auto;
   color: rgb(5, 107, 102);
 }
+form div {
+  padding: 20px 0;
+}
+.form-label {
+  width: 250px;
+  display: inline-block;
+}
+.form-control {
+  width: 400px;
+  /* background-color: skyblue; */
+  border: none;
+  outline: none;
+  border-bottom: 1px solid skyblue;
+}
+.btn-send {
+  width: 40px;
+  height: 30px;
+  background-color: skyblue;
+  color: rgb(5, 107, 102);
+  border-radius: 9px;
+  border: 1px solid rgb(5, 107, 102);
+  outline: none;
+  margin-left: 610px;
+  cursor: pointer;
+}
+
 /* footer section// */
 
 footer a {

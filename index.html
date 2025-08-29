@@ -5,23 +5,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
     <link rel="shortcut icon" href="image/favicon.jpg" type="image/x-icon" />
-    <title>Vine & Pine</title>
+    <title>Pine & Vine</title>
   </head>
   <body>
     <!-- header section// -->
     <header>
-      <h1>Vine & Pine</h1>
-      <p>Practical Heaven for Your Plans</p>
+      <h1>Pine & Vine</h1>
+      <!-- <p>Practical Heaven for Your Plans</p> -->
       <form action="">
-        <div>
+        <div class="search">
           <label for="">Search</label>
           <input type="text" />
         </div>
       </form>
-      <button class="btn">
+      <!-- <button class="btn">
         Notification
         <span class="badge">10</span>
-      </button>
+      </button> -->
     </header>
 
     <!-- nav section// -->
@@ -30,7 +30,7 @@
       <a href="#our-menu">Packages</a>
       <a href="places.html">Places</a>
       <a href="#about-us">About Us</a>
-      <a href="#contact">Contact</a>
+      <a href="#profile">Create Profile</a>
     </nav>
 
     <!-- menu section// -->
@@ -93,13 +93,29 @@
     </section>
 
     <!-- contact section// -->
-    <section id="contact">
-      <h2>Contact</h2>
+    <section id="profile">
+      <h2>Create Your Profile</h2>
       <form action="">
         <div>
-          <label for="">Email</label>
-          <input type="text" class="email" />
+          <label for="" class="form-label">Your Name</label>
+          <input type="text" class="form-control" name="" id="" />
         </div>
+
+        <div>
+          <label for="" class="form-label">Your Email</label>
+          <input type="email" class="form-control" name="" id="" />
+        </div>
+
+        <div>
+          <label for="" class="form-label">Password</label>
+          <input type="password" class="form-control" name="" id="" />
+        </div>
+        <div>
+          <label for="" class="form-label">Password Confirmation</label>
+          <input type="password" class="form-control" name="" id="" />
+        </div>
+
+        <input type="" value="Create" class="btn-send" />
       </form>
     </section>
 
