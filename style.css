@@ -14,6 +14,7 @@ body {
     rgb(183, 206, 219),
     white
   );
+  font-family: "Quicksand";
 }
 
 /* header section// */
@@ -52,6 +53,7 @@ header h1 {
   right: 5px;
   font-size: 20px;
   padding: 5px;
+  font-weight: bold;
   /* background-color: aqua; */
 }
 .btn {
@@ -64,6 +66,12 @@ header h1 {
   position: fixed;
   bottom: 19px;
   right: 10px;
+}
+.control {
+  width: 100px;
+  border: 1px solid rgb(4, 65, 63);
+  outline: none;
+  border-radius: 5px;
 }
 /* .badge {
   padding: 1px;
@@ -108,8 +116,8 @@ nav a {
 }
 .menu {
   border: 2px solid black;
-  width: 180px;
-  height: 300px;
+  width: 200px;
+  height: 320px;
   text-align: center;
   display: inline-block;
   background-color: white;

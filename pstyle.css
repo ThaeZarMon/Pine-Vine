@@ -11,21 +11,28 @@ body {
     white
   );
   background-repeat: no-repeat;
+  font-family: "Quicksand";
 }
 /* header section// */
+
 .search {
   color: rgb(4, 65, 63);
   position: fixed;
-  top: 15px;
+  top: 35px;
   right: 10px;
   font-size: 15px;
   padding: 5px;
   margin: 0;
   width: 130px;
   border: none;
+  font-weight: bold;
 }
 .control {
-  width: 80px;
+  width: 70px;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  border: 1px solid rgb(4, 65, 63);
 }
 
 /* nav section// */
@@ -37,9 +44,11 @@ nav {
   background-color: rgb(172, 230, 245);
   text-align: center;
   text-decoration: none;
-  position: sticky;
+  position: fixed;
   top: 15px;
-  left: 20px;
+  right: 10px;
+  margin-top: 60px;
+  margin-right: 25px;
 }
 nav a {
   text-decoration: none;
@@ -51,8 +60,17 @@ nav a {
 #maldives,
 #egypt,
 footer {
-  margin-top: 50px;
+  margin-top: 30px;
   margin-left: 120px;
+}
+#thailand h1 {
+  font-size: 2.5rem;
+  color: rgb(4, 65, 63);
+  text-align: left;
+  margin: 0;
+  margin-bottom: 20px;
+  text-shadow: 1px 1px 1px white;
+  font-weight: bold;
 }
 #thailand h2,
 #maldives h2,
@@ -127,7 +145,7 @@ form div {
   border: none;
   border-radius: 5px;
   margin-bottom: 50px;
-  margin-left: 235px;
+  margin-left: 190px;
 }
 footer a {
   padding: 10px;
