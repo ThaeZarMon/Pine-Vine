@@ -94,6 +94,7 @@ nav a {
   font-size: 1.2rem;
   padding: 20px;
   margin-top: 5px;
+  font-weight: bold;
 }
 
 /* menu section// */
@@ -116,8 +117,8 @@ nav a {
 }
 .menu {
   border: 2px solid black;
-  width: 200px;
-  height: 320px;
+  width: 250px;
+  height: 380px;
   text-align: center;
   display: inline-block;
   background-color: white;
@@ -137,15 +138,16 @@ nav a {
   color: rgb(5, 107, 102);
 }
 .m-body h3 {
-  margin-top: 10px;
+  margin: 15px;
   color: rgb(4, 65, 63);
+  font-size: 1.5rem;
 }
 .m-body ul {
   line-height: 1.5rem;
   margin-top: 10px;
   list-style-type: none;
   margin-bottom: 10px;
-  font-size: 0.9rem;
+  font-size: 1rem;
 }
 .price {
   font-weight: bold;
@@ -165,13 +167,12 @@ nav a {
 #about-us {
   margin-left: 30px;
 }
-#about-us p,
-#profile p {
+#about-us p {
   text-align: left;
   margin-left: 50px;
   color: rgb(5, 107, 102);
   line-height: 2rem;
-  font-size: 1.2rem;
+  font-size: 1rem;
 }
 
 /* contact section// */
@@ -238,4 +239,12 @@ footer {
   text-decoration: none;
   margin-left: 450px;
   line-height: 1.5rem;
+}
+.copy {
+  color: rgb(4, 65, 63);
+  margin-top: 50px;
+  margin-bottom: 20px;
+  font-size: 0.8rem;
+  text-align: center;
+  margin-left: 200px;
 }

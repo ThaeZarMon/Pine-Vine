@@ -107,12 +107,15 @@ nav a {
 .p-body {
   color: rgb(5, 107, 102);
   margin-top: 15px;
+  font-size: 1rem;
 
   /* text-shadow: 0.5px 0.5px 0.5px rgb(39, 57, 109); */
 }
 .p-body h3 {
   font-weight: bold;
   color: rgb(4, 65, 63);
+  font-size: 1.5rem;
+  margin: 15px;
 }
 .p-body ul {
   line-height: 1.5rem;
@@ -120,6 +123,7 @@ nav a {
   list-style-type: none;
   margin-bottom: 10px;
   text-align: center;
+  font-size: 1rem;
 }
 /* booking section// */
 form {
@@ -192,4 +196,12 @@ footer {
   text-decoration: none;
   margin-left: 450px;
   line-height: 1.5rem;
+}
+.copy {
+  color: rgb(4, 65, 63);
+  margin-top: 50px;
+  margin-bottom: 20px;
+  font-size: 0.8rem;
+  text-align: center;
+  margin-left: 200px;
 }
