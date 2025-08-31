@@ -115,12 +115,13 @@ nav a {
   margin-bottom: 20px;
   margin-left: 50px;
 }
-.menu {
+.menu1,
+.menu2,
+.menu3 {
   border: 2px solid black;
   width: 250px;
   height: 380px;
   text-align: center;
-  display: inline-block;
   background-color: white;
   border-radius: 10px;
   text-align: center;
@@ -161,6 +162,25 @@ nav a {
   border-radius: 5px;
   margin-top: 20px;
   border: 1px solid rgb(5, 107, 102);
+}
+.parent-menu {
+  display: grid;
+  grid-template-columns: 10px, 400px, 400px, 400px;
+  grid-template-rows: 1fr;
+  justify-content: left;
+}
+
+.menu1 {
+  grid-column: 2/3;
+  grid-row: 1/2;
+}
+.menu2 {
+  grid-column: 3/4;
+  grid-row: 1/2;
+}
+.menu3 {
+  grid-column: 4/5;
+  grid-row: 1/2;
 }
 
 /* about us section// */
@@ -209,42 +229,43 @@ form div {
 
 /* footer section// */
 footer {
-  position: relative;
+  display: grid;
+  grid-template-rows: 30px, 30px;
+  grid-template-columns: 300px, 300px;
   background-color: skyblue;
   padding: 20px;
+  font-size: 0.8rem;
+  color: rgb(4, 65, 63);
+  /* margin-bottom: 50px; */
+  line-height: 1.5rem;
 }
 .to-top {
   padding: 10px;
   background-color: skyblue;
   border: 1px solid rgb(4, 65, 63);
   border-radius: 50%;
-  position: fixed;
-  bottom: 30px;
-  right: 100px;
   text-decoration: none;
   color: rgb(5, 107, 102);
+  position: fixed;
+  bottom: 50px;
+  right: 20px;
 }
-.social {
-  font-size: 0.8rem;
-  color: rgb(4, 65, 63);
-  /* margin-bottom: 50px; */
-  margin-left: 100px;
-  float: left;
-  line-height: 1.5rem;
+.connect {
+  grid-row: 1/2;
+  grid-column: 1/2;
 }
-.icon {
-  font-size: 0.8rem;
-  color: rgb(4, 65, 63);
-  /* margin-bottom: 50px; */
-  text-decoration: none;
-  margin-left: 450px;
-  line-height: 1.5rem;
+.extra {
+  grid-row: 1/2;
+  grid-column: 2/3;
 }
 .copy {
-  color: rgb(4, 65, 63);
-  margin-top: 50px;
-  margin-bottom: 20px;
-  font-size: 0.8rem;
-  text-align: center;
-  margin-left: 200px;
+  grid-row: 2/3;
+  grid-column: 2/3;
+  justify-content: center;
+  font-size: 0.6rem;
+}
+@media (max-width: 768) {
+  body {
+    display: block;
+  }
 }

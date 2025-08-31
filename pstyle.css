@@ -17,45 +17,28 @@ body {
   font-family: "Quicksand";
 }
 /* header section// */
-
-/* nav section// */
-nav {
+header {
+  position: sticky;
+  top: 0;
+  right: 100px;
   padding: 20px;
-  line-height: 20px;
-  height: 20px;
   border-radius: 5px;
   background-color: skyblue;
   text-align: left;
-  position: sticky;
-  top: 0;
-  left: 30px;
-}
-nav a {
   color: rgb(4, 65, 63);
-  font-size: 1rem;
+}
+.icons,
+.name,
+.search {
+  color: rgb(4, 65, 63);
+  font-size: 1.2rem;
   font-weight: bold;
   border: none;
   outline: none;
   text-decoration: none;
   border-radius: 5px;
-  margin-left: 100px;
-}
-.country {
-  padding: 150px;
 }
 
-.search {
-  color: rgb(4, 65, 63);
-  font-size: 15px;
-  /* padding: 20px; */
-  /* margin-right: 45px; */
-  position: fixed;
-  top: 0;
-  right: 80px;
-  width: 150px;
-  border: none;
-  font-weight: bold;
-}
 .control {
   width: 70px;
   border: none;
@@ -63,14 +46,24 @@ nav a {
   border-radius: 5px;
   border: 1px solid rgb(4, 65, 63);
 }
-
+.icons {
+  margin-left: 100px;
+}
+.name {
+  margin-left: 600px;
+  margin-top: -23px;
+}
+.search {
+  margin-left: 1100px;
+  margin-top: -28px;
+}
 /* Thai section// */
 #thailand,
 #maldives,
 #egypt,
 #book {
   margin-top: 30px;
-  margin-left: 120px;
+  margin-left: 50px;
 }
 
 #thailand h2,
@@ -83,12 +76,21 @@ nav a {
   margin-bottom: 20px;
   text-align: left;
 }
-.place {
+.thai-parent,
+.maldives-parent,
+.egypt-parent {
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+.first,
+.second,
+.third,
+.fourth {
   border: 2px solid black;
   width: 250px;
   height: 300px;
   text-align: center;
-  display: inline-block;
   background-color: rgb(202, 221, 219);
   border-radius: 10px;
   padding: 5px;
@@ -125,6 +127,24 @@ nav a {
   text-align: center;
   font-size: 1rem;
 }
+.first {
+  grid-column: 1/2;
+  grid-row: 1/2;
+  justify-content: space-between;
+}
+.second {
+  grid-column: 2/3;
+  justify-content: space-between;
+}
+.third {
+  grid-column: 3/4;
+  justify-content: space-between;
+}
+.fourth {
+  grid-column: 4/5;
+  justify-content: space-between;
+}
+
 /* booking section// */
 form {
   width: 90%;
@@ -166,42 +186,38 @@ form div {
 /* footer section// */
 
 footer {
-  position: relative;
+  display: grid;
+  grid-template-rows: 30px, 30px;
+  grid-template-columns: 300px, 300px;
   background-color: skyblue;
   padding: 20px;
+  font-size: 0.8rem;
+  color: rgb(4, 65, 63);
+  /* margin-bottom: 50px; */
+  line-height: 1.5rem;
 }
 .to-top {
   padding: 10px;
   background-color: skyblue;
   border: 1px solid rgb(4, 65, 63);
   border-radius: 50%;
-  position: fixed;
-  bottom: 30px;
-  right: 100px;
   text-decoration: none;
   color: rgb(5, 107, 102);
+  position: fixed;
+  bottom: 50px;
+  right: 20px;
 }
-.social {
-  font-size: 0.8rem;
-  color: rgb(4, 65, 63);
-  /* margin-bottom: 50px; */
-  margin-left: 100px;
-  float: left;
-  line-height: 1.5rem;
+.connect {
+  grid-row: 1/2;
+  grid-column: 1/2;
 }
-.icon {
-  font-size: 0.8rem;
-  color: rgb(4, 65, 63);
-  /* margin-bottom: 50px; */
-  text-decoration: none;
-  margin-left: 450px;
-  line-height: 1.5rem;
+.extra {
+  grid-row: 1/2;
+  grid-column: 2/3;
 }
 .copy {
-  color: rgb(4, 65, 63);
-  margin-top: 50px;
-  margin-bottom: 20px;
-  font-size: 0.8rem;
-  text-align: center;
-  margin-left: 200px;
+  grid-row: 2/3;
+  grid-column: 2/3;
+  justify-content: center;
+  font-size: 0.6rem;
 }
